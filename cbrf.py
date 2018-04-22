@@ -2,7 +2,7 @@ import requests
 import datetime
 from lxml import html
 
-token = "https://api.telegram.org/bot510031749:AAG6UIb6ri5ur5bnUcohZ_CrnqBqM0Npgrc/"
+token = "bot"
 
 
 
