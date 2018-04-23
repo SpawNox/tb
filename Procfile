@@ -1,1 +1,1 @@
-web: python cbrf.py
+web: python bot.py
