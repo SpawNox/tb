@@ -4,7 +4,7 @@ from time import sleep
 
 def get_updates_json(request):
     params ={'timeout':100, 'offset': None}
-    response = requests.get(config.token + 'getUpdates', proxies=config.proxies, data=params)
+    response = requests.get(config.token + 'getUpdates', data=params)
     return response.json()
 
 def last_update(data):
@@ -22,7 +22,7 @@ def get_text(update):
 
 def send_mess(chat, text):
     params = {'chat_id': chat, 'text': text}
-    response = requests.post(config.token + 'sendMessage', data=params, proxies=config.proxies)
+    response = requests.post(config.token + 'sendMessage', data=params)
     return response
 
 def main():
